@@ -1,0 +1,12 @@
+<div [formGroup]="reactiveCat">
+  <p-dialog header="Add Category" [(visible)]="displayBasic" [style]="{width: '50vw'}">
+  <span  class="p-float-label my-4">
+    <input formControlName="name" id="float-input" type="text" pInputText>
+    <label for="float-input">Name</label>
+</span>
+    <ng-template pTemplate="footer">
+      <p-button icon="pi pi-save" (click)="save()" label="Save" styleClass="p-button-text"></p-button>
+    </ng-template>
+  </p-dialog>
+
+</div>

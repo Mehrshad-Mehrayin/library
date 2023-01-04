@@ -1,0 +1,11 @@
+<app-category-dialog (isReload)="reloadList($event)"
+                     [listInput]="paramUpdate">
+</app-category-dialog>
+
+
+<app-category-list [reloadList]="reload"
+                   (listOutput)="inputParam($event)">
+</app-category-list>
+
+<!--we get output as function but input as properties-->
+
